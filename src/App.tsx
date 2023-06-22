@@ -174,3 +174,9 @@ export default function App() {
   );
 }
 
+function newGame(): React.MouseEventHandler<HTMLButtonElement> | undefined {
+  localStorage.clear();
+  // eslint-disable-next-line no-restricted-globals
+  location.reload();
+  return;
+}
